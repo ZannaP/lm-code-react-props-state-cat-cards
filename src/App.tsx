@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Cat from "./data/cat";
+import CatCard from "./components/cat_card";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -87,7 +88,9 @@ function App(): JSX.Element {
       <Header />
 
       <main>
-        <div className="cards__wrapper">{/* JSX code can go here */}</div>
+        <div className="cards__wrapper">
+          <CatCard />
+        </div>
       </main>
 
       <Footer />
